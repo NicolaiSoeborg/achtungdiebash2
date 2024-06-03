@@ -1,25 +1,18 @@
 # achtungdiebash  🐍
-Multiplayer actung die curve written in bash!
 
+Multiplayer actung die curve written in bash!
 
 ![picture of game](https://github.com/kofoednielsen/achtungdiebash/blob/main/achtungdiebash.png)
 
-
 # how to play
-Grab your best friend/s and make sure you are on the same wifi
+
+Grab your best friend/s and make sure you are on the same wifi (or no firewall/NAT)
 
 Run `server.sh` on your laptop
-
-Then run the client on both your own and your friends laptop. This bash one liner is the client 😎
-```
-/usr/bin/env bash -c 'while :; do printf "\033c"; read -n1 input && printf "$(whoami) $input" | nc -N <server_ip> 1337; done'
-```
-> replace <server_ip> with your local ip address
 
 After running the client, press any `wasd` key to join the lobby, and press `r` to ready up
 
 The game only supports up to 6 players, if you play more than 6 anything could happen
-
 
 # If you can't join the lobby
 
